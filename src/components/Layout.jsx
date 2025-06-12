@@ -46,6 +46,9 @@ export default function Layout({ children }) {
               <HeaderMenuItem onClick={() => navigate("/")}>
                 Home
               </HeaderMenuItem>
+              <HeaderMenuItem onClick={() => navigate("/weather")}>
+                Weather
+              </HeaderMenuItem>
               <HeaderMenuItem onClick={() => navigate("/about")}>
                 About
               </HeaderMenuItem>
@@ -88,6 +91,9 @@ export default function Layout({ children }) {
                 <HeaderSideNavItems hasDivider>
                   <HeaderMenuItem onClick={() => navigate("/")}>
                     Home
+                  </HeaderMenuItem>
+                  <HeaderMenuItem onClick={() => navigate("/weather")}>
+                    Weather
                   </HeaderMenuItem>
                   <HeaderMenuItem onClick={() => navigate("/about")}>
                     About

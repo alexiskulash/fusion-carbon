@@ -2,6 +2,9 @@
   $font-path: "@ibm/plex"
 );
 
+// Import weather dashboard styles
+@import "./styles/weather";
+
 /* Hide SideNav on desktop (wider than 1056px, Carbon 'lg' breakpoint) */
 @media (min-width: 1056px) {
   .cds--side-nav {
