@@ -1,10 +1,10 @@
 import React from "react";
 import { Tile, Tag } from "@carbon/react";
 import {
-  Temperature,
-  Humidity,
-  Wind,
-  Pressure,
+  Activity,
+  LocationSave,
+  TrainSpeed,
+  Analytics,
   Location,
 } from "@carbon/icons-react";
 
@@ -86,7 +86,7 @@ export default function CurrentWeather({ data, location, units }) {
 
       <div className="current-weather__details">
         <div className="current-weather__detail">
-          <Humidity size={16} />
+          <Activity size={16} />
           <span className="current-weather__detail-label">Humidity</span>
           <span className="current-weather__detail-value">
             {data.relative_humidity_2m}%
@@ -94,7 +94,7 @@ export default function CurrentWeather({ data, location, units }) {
         </div>
 
         <div className="current-weather__detail">
-          <Wind size={16} />
+          <TrainSpeed size={16} />
           <span className="current-weather__detail-label">Wind</span>
           <span className="current-weather__detail-value">
             {Math.round(data.wind_speed_10m)} {units.wind_speed_10m}
@@ -102,7 +102,7 @@ export default function CurrentWeather({ data, location, units }) {
         </div>
 
         <div className="current-weather__detail">
-          <Pressure size={16} />
+          <Analytics size={16} />
           <span className="current-weather__detail-label">Pressure</span>
           <span className="current-weather__detail-value">
             {Math.round(data.surface_pressure)} {units.surface_pressure}
@@ -110,7 +110,7 @@ export default function CurrentWeather({ data, location, units }) {
         </div>
 
         <div className="current-weather__detail">
-          <Temperature size={16} />
+          <LocationSave size={16} />
           <span className="current-weather__detail-label">Wind Direction</span>
           <span className="current-weather__detail-value">
             {data.wind_direction_10m}°

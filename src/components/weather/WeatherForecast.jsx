@@ -120,19 +120,19 @@ export default function WeatherForecast({
                             )}
                             {cell.info.header === "temperature" && (
                               <span className="weather-forecast__temperature">
-                                <Temperature size={16} />
+                                <Activity size={16} />
                                 {cell.value}°
                               </span>
                             )}
                             {cell.info.header === "precipitation" && (
                               <span className="weather-forecast__precipitation">
-                                <Rain size={16} />
+                                <Analytics size={16} />
                                 {cell.value}%
                               </span>
                             )}
                             {cell.info.header === "windSpeed" && (
                               <span className="weather-forecast__wind">
-                                <Wind size={16} />
+                                <TrainSpeed size={16} />
                                 {cell.value}
                               </span>
                             )}
@@ -182,19 +182,19 @@ export default function WeatherForecast({
                             {(cell.info.header === "maxTemp" ||
                               cell.info.header === "minTemp") && (
                               <span className="weather-forecast__temperature">
-                                <Temperature size={16} />
+                                <Activity size={16} />
                                 {cell.value}°
                               </span>
                             )}
                             {cell.info.header === "precipitation" && (
                               <span className="weather-forecast__precipitation">
-                                <Rain size={16} />
+                                <Analytics size={16} />
                                 {cell.value}%
                               </span>
                             )}
                             {cell.info.header === "windSpeed" && (
                               <span className="weather-forecast__wind">
-                                <Wind size={16} />
+                                <TrainSpeed size={16} />
                                 {cell.value}
                               </span>
                             )}
