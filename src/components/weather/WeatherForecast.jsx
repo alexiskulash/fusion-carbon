@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Tile, Tabs, Tab, DataTable } from "@carbon/react";
-import { Temperature, Rain, Wind } from "@carbon/icons-react";
+import { Activity, Analytics, TrainSpeed } from "@carbon/icons-react";
 
 const getWeatherIcon = (weatherCode) => {
   // Simple weather icon mapping - in a real app you might use actual weather icons
